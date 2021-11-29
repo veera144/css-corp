@@ -20,11 +20,11 @@ const a = 1; const b = 2; const c = 3;
 // Can be solved by passing the bird param to IIFE or declaring the variable inside the IIFE. 
 var bird = 'Pidgeons';
 ( function (bird) {
-    //var bird = 'Pidgeons';
+    var bird = 'Pidgeons'; //Solution 2
     if ( typeof bird === 'undefined' ){
-        var bird = 'Rubber Duck';
+        bird = 'Rubber Duck'; // Solution 3
         console.log('Ernie loves his ' + bird );
     } else {
         console.log('Bert loves his ' + bird );
     }
-}(bird) );
+}(bird) ); //Solution 1
